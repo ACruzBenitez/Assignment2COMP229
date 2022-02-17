@@ -11,7 +11,7 @@ exports.list = function(req, res, next) {
             res.render(
                 'inventory/list', 
                 { 
-                    title: 'Inventory list',
+                    title: 'Contact list',
                     InventoryList: inventoryList
                 }
                 );
@@ -25,7 +25,7 @@ module.exports.displayAddPage = (req, res, next) => {
     let newItem = Inventory();
 
     res.render('inventory/add_edit', {
-        title: 'Add a new Item',
+        title: 'Add a new Contact',
         item: newItem
     })          
 }
@@ -68,7 +68,7 @@ module.exports.displayEditPage = (req, res, next) => {
         {
             //show the edit view
             res.render('inventory/add_edit', {
-                title: 'Edit Item', 
+                title: 'Edit Contact', 
                 item: itemToEdit
             })
         }
