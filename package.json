@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.3",
     "cjs": "^0.0.11",
+    "cjs-loader": "^0.1.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
