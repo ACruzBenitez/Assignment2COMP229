@@ -95,7 +95,7 @@ H4 { font-family: Dosis;}
                       <% } else { %>
                         <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/inventory/list">
                       <% } %>
-                        <i class="fas fa-home"></i> User </a>
+                        <i class="fas fa-home"></i> Inventory </a>
                       </a>
                     </li>
                     <li style="width:120px;" class="nav-item">
@@ -114,6 +114,20 @@ H4 { font-family: Dosis;}
                         <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/users/contact">
                       <% } %>
                         <i class="fas fa-home"></i> Contact </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "Sign-in Form") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/users/signin">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/users/signin">
+                      <% } %>
+                        <i class="fas fa-home"></i> Login </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                        <a style="color:white; background-color: #41307a;" class="nav-link active" href="/users/signout">
+                        <i class="fas fa-home"></i> Sign Out </a>
                       </a>
                     </li>
                 </div>

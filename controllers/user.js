@@ -8,11 +8,17 @@ exports.user = function(req, res, next) {
     });
 }
 
-exports.julio = function(req, res, next) {
+exports.angel = function(req, res, next) {
     res.render('user', { 
         title: 'User',
         name: 'Angel'
     });
+}
+exports.contact = function(req, res, next) {
+  res.render('contactinfo', { 
+      title: 'Contact info',
+      name: 'contact'
+  });
 }
 
 function getErrorMessage(err) {

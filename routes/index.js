@@ -11,6 +11,8 @@ router.get('/', indexController.home);
 /* GET Project page. */
 router.get('/projects', indexController.projects);
 
+router.get('/services', indexController.services);
+
 /* GET About page. */
 router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About' });
