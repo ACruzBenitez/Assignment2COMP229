@@ -13,12 +13,12 @@
         </div>
 
         <div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover">
+            <table class="table">
                 <!-- Header Row-->
                 <tr>
-                    <th class="text-center">Name</th>
-                    <th class="text-center">Number</th>
-                    <th class="text-center">email</th>
+                    <th class="text-center color:black">Name</th>
+                    <th class="text-center color:black">Number</th>
+                    <th class="text-center color:black">email</th>
                 </tr>
 
                 <!-- Repeatable Template Row -->
@@ -30,11 +30,11 @@
                         <td class="text-center"><%= InventoryList[count].email %></td>
                         <td class="text-center">
                             <a href="/inventory/edit/<%= InventoryList[count]._id %>" class="btn btn-primary btn-sm">
-                            <i class="fas fa-pencil-alt"></i></a>
+                            <i class="fas fa-pencil-alt">edit</i></a>
                         </td>
                         <td class="text-center">
                             <a href="/inventory/delete/<%= InventoryList[count]._id %>" class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash-alt"></i></a>
+                            <i class="fas fa-trash-alt">delete</i></a>
                         </td>
                     </tr>
                 <% } %>
